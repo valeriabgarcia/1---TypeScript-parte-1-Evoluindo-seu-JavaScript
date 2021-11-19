@@ -1,0 +1,60 @@
+https://cursos.alura.com.br/category/front-end#javascript
+https://cursos.alura.com.br/course/typescript-evoluindo-javascript?preRequirementFrom=angular-comecando-framework
+
+Temos as seguintes afirmações a respeito do compilador do TypeScript:
+1) O compilador depende do  uso de Node.js para funcionar 
+2) O código TypeScript precisa ser traduzido/convertido para um código em ECMASCRIPT para que seja entendido pelo navegador
+3) Podemos passar configurações especiais para o compilador através do arquivo tsconfig.json
+4) É instalado através do npm
+
+VScode
+Node.js -> compilador do JS
+no terminal do VScode -> npm install
+npm run server
+npm install typescript@4.2.2 --save-dev
+npm run compile
+
+
+1 - PORQUE USAR TYPESCRIPT? 
+Introdução ao projeto e sua estrutura
+Um pouco sobre módulos do ECMASCRIPT
+	<script type="module" src="app/app.js"></script>
+Modelagem de uma Negociação em Javascript
+Buracos em nossa modelagem por limitações da linguagem Javascript
+
+2 - TYPESCRIPT E COMPILADOR
+Download do TypeScript
+Configuração do compilador e papel do tsconfig.json
+	É necessário criar um arquivo tsconfig.json para que seja convertido o ts em js
+	Para automatizar a compilação: No arquivo package.json -> incluir o script   
+		"compile": "tsc",
+		"watch": "tsc -w"
+Integração com scripts do Node.js
+Modificadores de accesso private e public
+Benefícios iniciais da linguagem TypeScript
+
+3 - BENEFÍCIOS DA TIPAGEM ESTÁTICA
+No arquivo tsconfig.json 
+	"noImplicitAny": true
+A string passada pelo construtor deve ter o ano, mês e dia separados por vírgula
+O tipo implícito any
+Benefícios da tipagem estática
+Mais configurações do compilador tsc
+Retorno de método explícito
+Conversão de valores da interface do usuário
+
+4 - AVANÇANDO NA MODELAGEM DO DOMÍNIO
+É necessário indicar o tipo de Array 
+Modelagem da classe Negociacoes
+Utiliação de Generics
+Revisão sobre encapsulamento
+Questões de mutabilidade e como solucioná-la
+O tipo ReadonlyArray
+Adição de negociações em nossa lista
+
+5 - SIMPLIFICANDO NOSSO CÓDIGO
+Nova maneira de declaração de array com generics
+O tipo ReadonlyArray
+O modificador readonly
+Getters vs propriedades públicas em modo de leitura
+Programação defensiva
